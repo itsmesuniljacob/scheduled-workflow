@@ -5,8 +5,8 @@ on:
     - cron:  '* * * * *'
 jobs:
   test-schedule:
-  runs-on: ubuntu-latest
-  steps:
-    - name: run every minute
-      run: echo "Running every minute"
+    runs-on: ubuntu-latest
+    steps:
+      - name: run every minute
+        run: echo "Running every minute"
 
