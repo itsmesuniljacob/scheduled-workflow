@@ -1,0 +1,12 @@
+name: Scheduled run
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '* * * * *'
+jobs:
+  test-schedule:
+  runs-on: ubuntu-latest
+  steps:
+    - name: run every minute
+      run: echo "Running every minute"
+
